@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://metro.proxy.rlwy.net:24563/railway"
+  baseURL: "http://ecommerce-backend-main1-production.up.railway.app"
 });
 
 export default API;

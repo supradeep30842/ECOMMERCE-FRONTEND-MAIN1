@@ -18,7 +18,7 @@ function Login() {
   };
 
   const handleLogin = () => {
-    API.post("/auth/login", login)
+    API.post("/api/auth/login", login)
       .then((res) => {
         const role = res.data.role;
 

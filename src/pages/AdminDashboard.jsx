@@ -11,7 +11,7 @@ function AdminDashboard() {
   }, []);
 
   const loadProducts = () => {
-    API.get("/products")
+    API.get("/api/products")
       .then((res) => {
         setProducts(res.data);
       })

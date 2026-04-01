@@ -18,7 +18,7 @@ function UpdateProduct() {
   }, []);
 
   const loadProduct = () => {
-    API.get(`/products/${id}`)
+    API.get(`/api/products/${id}`)
       .then((res) => {
         setProduct(res.data);
       })
@@ -35,7 +35,7 @@ function UpdateProduct() {
   };
 
   const updateProduct = () => {
-    API.put(`/products/${id}`, product)
+    API.put(`/api/products/${id}`, product)
       .then(() => {
         alert("Product updated successfully");
         navigate("/admin-dashboard");

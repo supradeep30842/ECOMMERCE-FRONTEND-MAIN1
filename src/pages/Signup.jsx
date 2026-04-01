@@ -21,7 +21,7 @@ function Signup() {
   };
 
   const signup = () => {
-    API.post("/auth/signup", user)
+    API.post("/api/auth/signup", user)
       .then((res) => {
         alert("Signup Successful");
 

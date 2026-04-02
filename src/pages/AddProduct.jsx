@@ -22,7 +22,7 @@ function AddProduct() {
   const saveProduct = (e) => {
     e.preventDefault();
 
-    API.post("/products", product)
+    API.post("/api/products", product)
       .then(() => {
         alert("Product Added Successfully");
         navigate("/admin-dashboard");

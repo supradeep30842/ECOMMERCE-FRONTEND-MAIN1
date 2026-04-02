@@ -6,7 +6,7 @@ function DeleteProduct() {
   const navigate = useNavigate();
 
   const deleteProduct = () => {
-    API.delete(`/products/${id}`)
+    API.delete(`/api/products/${id}`)
       .then(() => {
         alert("Product deleted successfully");
         navigate("/admin-dashboard");
